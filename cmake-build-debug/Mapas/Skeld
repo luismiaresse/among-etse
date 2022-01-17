@@ -1,0 +1,115 @@
+Skeld
+*
+Reactor:2
+Seguridad:1
+MotorSuperior:2
+MotorInferior:2
+Enfermeria:2
+Electricidad:3
+Cafeteria:1
+Armeria:1
+Administracion:1
+Almacen:2
+Comunicacion:0
+Escudos:1
+Pasillo:0
+Navegacion:2
+O2:2
+*
+MotorSuperior:4:Alinear la salida del motor
+MotorSuperior:4:Desviar energia
+MotorInferior:4:Alinear la salida del motor
+MotorInferior:4:Repostar combustible
+Reactor:5:Encender reactor
+Reactor:7:Desbloquear energia
+O2:4:Cerrar escotilla
+O2:5:Limpiar el filtro O2
+Cafeteria:5:Vaciar papeleras
+Administracion:4:Pasar tarjeta
+Electricidad:4:Calibrar distribuidor
+Electricidad:5:Arreglar cableado
+Electricidad:5:Subir datos
+Escudos:4:Desviar energia
+Navegacion:5:Estabilizar direccion
+Navegacion:5:Subir datos
+Armeria:5:Descargar datos
+Enfermeria:4:Inspeccionar muestra
+Enfermeria:3:Pasar escaner
+Seguridad:4:Desviar energia
+Almacen:4:Repostar combustible
+Almacen:5:Vaciar basura
+*
+Reactor--2-Seguridad
+Reactor..2-Seguridad
+Reactor--2-MotorSuperior
+Reactor..1-MotorSuperior
+Reactor--2-MotorInferior
+Reactor..1-MotorInferior
+Seguridad--2-Reactor
+Seguridad..2-Reactor
+Seguridad..1-Enfermeria
+Seguridad..1-Electricidad
+MotorSuperior--2-Reactor
+MotorSuperior..1-Reactor
+MotorSuperior--2-Enfermeria
+MotorSuperior..2-Enfermeria
+MotorInferior--2-Reactor
+MotorInferior..1-Reactor
+MotorInferior--2-Electricidad
+Enfermeria..1-Seguridad
+Enfermeria--2-MotorSuperior
+Enfermeria..2-MotorSuperior
+Enfermeria..1-Electricidad
+Enfermeria--2-Cafeteria
+Enfermeria..2-Cafeteria
+Electricidad..1-Seguridad
+Electricidad--2-MotorInferior
+Electricidad..1-Enfermeria
+Electricidad--2-Almacen
+Electricidad..2-Almacen
+Cafeteria--2-Enfermeria
+Cafeteria..2-Enfermeria
+Cafeteria--1-Armeria
+Cafeteria..1-Armeria
+Cafeteria--2-Administracion
+Cafeteria..1-Administracion
+Cafeteria..1-Pasillo
+Armeria--1-Cafeteria
+Armeria..1-Cafeteria
+Armeria..1-Navegacion
+Armeria--2-O2
+Armeria..2-O2
+Administracion--2-Cafeteria
+Administracion..1-Cafeteria
+Administracion--2-Almacen
+Administracion..2-Almacen
+Administracion..1-Pasillo
+Almacen--2-Electricidad
+Almacen..2-Electricidad
+Almacen--2-Administracion
+Almacen..2-Administracion
+Almacen--2-Comunicacion
+Almacen..2-Comunicacion
+Comunicacion--2-Almacen
+Comunicacion..2-Almacen
+Comunicacion--2-Escudos
+Comunicacion..2-Escudos
+Escudos--2-Comunicacion
+Escudos..2-Comunicacion
+Escudos--2-Pasillo
+Escudos..1-Navegacion
+Pasillo..1-Cafeteria
+Pasillo..1-Administracion
+Pasillo--2-Escudos
+Pasillo--2-Navegacion
+Pasillo..2-Navegacion
+Pasillo--2-O2
+Pasillo..2-O2
+Navegacion..1-Armeria
+Navegacion..1-Escudos
+Navegacion--2-Pasillo
+Navegacion..2-Pasillo
+O2--2-Armeria
+O2..2-Armeria
+O2--2-Pasillo
+O2..2-Pasillo
